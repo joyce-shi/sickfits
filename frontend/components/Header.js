@@ -2,6 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from './Nav';
 import Link from 'next/link';
+import Router from 'next/router';
+import Nprogress from 'nprogress';
+
+Router.onRouteChangeStart = () => {
+    Nprogress.start();
+}
+Router.onRouteChangeComplete = () => {
+    Nprogress.done();
+}
+Router.onRouteChangeError = () => {
+
+}
 
 const Logo = styled.h1`
   font-size: 4rem;
