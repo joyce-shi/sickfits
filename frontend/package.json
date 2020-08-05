@@ -22,6 +22,7 @@
     "downshift": "^2.2.3",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^7.6.0",
     "eslint-plugin-react": "^7.20.4",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.9.2",
