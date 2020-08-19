@@ -1,0 +1,20 @@
+# remember to redeploy after this file is updated
+
+type User {
+  id: ID! @id @unique
+  name: String!
+  email: String! @unique
+
+}
+
+type Item {
+  id: ID! @id @Unique
+  title: String!
+  description: String!
+  image: String
+  largeImage: String
+  price: Int!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  # user: User!
+}
