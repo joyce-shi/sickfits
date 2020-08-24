@@ -36,7 +36,6 @@ class Items extends Component {
                 <Query query={ ALL_ITEMS_QUERY }>
                     {
                         ({ data, error, loading }) => {
-                            console.log(data);
                             if (loading) return <p>Loading...</p>
                             if (error) return <p>Error: {error.message}</p>
                             return (
@@ -57,3 +56,4 @@ class Items extends Component {
 }
 
 export default Items;
+export { ALL_ITEMS_QUERY };
